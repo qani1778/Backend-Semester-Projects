@@ -1,0 +1,330 @@
+body {
+    font-family: Calibri, sans-serif;
+    color: #212529;
+}
+#header {
+    font-family: Consolas, monospace;
+}
+
+#header td {
+    background-color: #0E8EA8;
+    color: #fff;
+}
+th {
+    font-family: Consolas, monospace;
+    background-color: #0E8EA8;
+    color: #fff;
+}
+
+td {
+    font-family: Calibri, sans-serif;
+}
+
+/* Dropdown menu items */
+.dropdown-menu {
+    background-color: #83D1E1;
+    color: #212529;
+}
+.btn {
+    font-family: Consolas, monospace;
+}
+
+.bg-success {
+    background-color: #198754 !important;
+}
+
+#header{
+    width: 20%;
+    height: 40px;
+    background-color: #4d89ab;
+    padding: 5px;
+    font-family: arial;
+    font-size: 13.5px;
+    color: #fff;
+    margin: 10px;
+    cursor: pointer;
+}
+#header td:hover{
+    color:#000;
+}
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #9ccce1;
+    min-width: 150px;
+    z-index: 1000;
+    cursor: pointer;
+  }
+  .dropdown-menu li {
+    cursor: pointer;
+    list-style: none;
+    background-color: #9ccce1;
+    cursor: pointer;
+  }
+  .dropdown-menu li:hover {
+    background-color: #9ccce1;
+  }
+
+
+
+  /* Custom Table Styles */
+  .tableMainContaier{
+    display: grid;
+    justify-items: center;
+}
+.logo{
+    width: 60px;
+    height: 60px;
+}
+.tableMainContaier h2{
+    font-size:20px;
+    font-family: arial;
+    padding-top: 30px;
+}
+.tableMainContaier h5{
+    font-size: 20px;
+    font-family: arial;
+}
+  #tableMain {
+    width: 80%;
+    border-collapse: collapse;
+    background-color: #9ccce1;
+    border: 2px solid black;
+}
+
+#tableMain th {
+    background-color: #4d8aa9;
+    color: #ffffff;
+    text-align: left;
+    border: 2px solid black;
+    padding: 8px;
+    font-size: 15px;
+}
+
+#tableMain td {
+    text-align: left;
+    border: 2px solid black;
+    padding: 8px;
+    font-size: 15px;
+
+}
+
+
+
+#DeliverytableMain {
+    width: 80%;
+    border-collapse: collapse;
+    background-color: #9ccce1;
+    border: 2px solid black;
+}
+
+#DeliverytableMain th {
+    background-color: #4d8aa9;
+    color: #ffffff;
+    text-align: left;
+    border: 2px solid black;
+    padding: 8px;
+    font-size: 15px;
+}
+
+#DeliverytableMain td {
+    text-align: left;
+    border: 2px solid black;
+    padding: 8px;
+    font-size: 15px;
+
+}
+
+
+
+
+#DeliveryBoardtableMain {
+    width: 80%;
+    border-collapse: collapse;
+    background-color: #9ccce1;
+    border: 2px solid black;
+}
+
+#DeliveryBoardtableMain th {
+    background-color: #4d8aa9;
+    color: #ffffff;
+    text-align: left;
+    border: 2px solid black;
+    padding: 8px;
+    font-size: 15px;
+}
+
+#DeliveryBoardtableMain td {
+    text-align: left;
+    border-left: 2px solid black;
+    border-bottom: 2px solid black;
+    padding: 8px;
+    font-size: 15px;
+}
+
+
+
+img {
+    width: 50px;
+    height: 50px;
+}
+
+.btnBox {
+    width: 80%;
+    height: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Creates three columns */
+}
+.DeliverybtnBox {
+    width: 80%;
+    height: 30px;
+    display: grid;
+    grid-template-columns: 1fr; /* Creates three columns */
+}
+.AddrightBtn {
+    justify-self: end;
+    border: 0px; /* Align the right button to the right */
+    border-radius: 5px;
+    width: 13%;
+}
+.DeliveryBoardbtnBox {
+    width: 80%;
+    height: 30px;
+    display: grid;
+    grid-template-columns: 1fr; /* Creates three columns */
+}
+.DeliveryBoardAddrightBtn {
+    justify-self: end;
+    border: 0px; /* Align the right button to the right */
+    border-radius: 5px;
+    width: 13%;
+}
+
+.leftBtn {
+    justify-self: start;
+    border: 0px; /* Align the left button to the left */
+    border-radius: 5px;
+    width: 25%;
+}
+
+.rightBtn {
+    justify-self: end;
+    border: 0px; /* Align the right button to the right */
+    border-radius: 5px;
+    width: 25%;
+}
+
+.selected-row td {
+    background-color: #198754 !important;
+}
+
+
+.late-alert {
+    position: fixed;
+    top: 15em;
+    right: 10px;
+    z-index: 99999;
+    background-color: #c23b48;  /* Background color */
+    padding: 10px;
+    color: #fff;
+    border-radius: 5px;
+    width: auto;  /* Width will adjust according to the content */
+    max-width: 300px;  /* Limit the maximum width of the alert */
+    text-align: center;  /* Center align text */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Optional: adds shadow for better visibility */
+}
+
+.late-alert img {
+    width: 50px;  /* Adjust the image size */
+    height: 50px;
+    display: block;
+    margin: 0 auto 10px auto;  /* Center the image and add bottom margin */
+}
+
+.late-alert .btn-close {
+    background: none;
+    border: none;
+    font-size: 20px;
+    color: #000;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.late-alert strong {
+    color: #ffffff;  /* Customize the strong text color */
+    display: block;  /* Ensure text appears on a new line */
+    margin-top: 5px;  /* Add space between the image and the text */
+}
+
+.late-alert br {
+    margin-bottom: 5px;  /* Add space between lines of text */
+}
+
+#alertBox {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1050;
+    min-width: 300px;
+}
+
+.alert {
+    margin-bottom: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.alert img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+
+.selected-delivery-row {
+    background-color: #198754;
+}
+
+#alertBox {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+    min-width: 300px;
+}
+
+#alertBox .alert {
+    margin-bottom: 10px;
+}
+
+.staff-late-alert {
+    position: fixed;
+    top: 20px;
+    right: 10px;
+    z-index: 99999;
+    background-color: #dc3545;  /* Red background for staff alerts */
+    padding: 15px;
+    color: #fff;
+    border-radius: 5px;
+    width: auto;
+    max-width: 400px;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.delivery-late-alert {
+    position: fixed;
+    top: 200px;
+    right: 10px;
+    z-index: 99999;
+    background-color: #dc3545;  /* Orange background for delivery alerts */
+    padding: 15px;
+    color: #fff;
+    border-radius: 5px;
+    width: auto;
+    max-width: 400px;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
